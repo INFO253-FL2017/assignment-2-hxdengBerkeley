@@ -1,3 +1,128 @@
-h1 {
-	color: blue;
+
+/*body*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, ul, li{
+   	font-family: Georgia;
+    margin:0;
+    padding-bottom: 10px;
+    color: #3B3738;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 80%;
+  background-color:#FDF3E7;
+}
+
+h1{
+	position: relative;
+    height: auto;
+	margin:auto auto auto auto;
+	padding:auto auto auto auto;
+    text-align:justify;
+}
+
+.content{
+	position: relative;
+    height: auto;
+	width: 70%;
+	margin:auto auto auto auto;
+	padding:auto auto auto auto;
+    text-align:justify;
+}
+.content li a{
+	color: #3B3738;
+}
+
+/*header*/
+.header {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	font-size: 20px;
+	font-weight: bolder;
+  	text-align: center;
+    height: 60px;
+}
+
+.header li{
+	list-style-image: none;
+	list-style-type: none;
+	background-color: #C63D0F;
+	float: left;
+}
+.header li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	margin:100px auto 100px auto;
+	padding:100px 80px 100px 80px;
+}
+
+#wapper{  
+    position: relative;   /*重要！保证footer是相对于wapper位置绝对*/  
+    height: auto;          /* 保证页面能撑开浏览器高度时显示正常*/  
+    min-height: 100%  /* IE6不支持，IE6要单独配置*/  
+}
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	font-size: 20px;
+	font-weight: bolder;
+  	text-align: center;
+    height: 60px;
+}
+
+.footer li{
+	list-style-image: none;
+	list-style-type: none;
+	background-color: #C63D0F;
+	float: left;
+}
+.footer li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	margin:100px auto 100px auto;
+	padding:100px 80px 100px 80px;
+}
+
+/*about us*/
+.resume {
+	position: relative;
+    height: auto;
+	width: 70%;
+	margin:auto auto auto auto;
+	padding:auto auto auto auto;
+    text-align:justify;
+}
+.resume li a{
+	color: #3B3738;
+}
+
+/*for comment*/
+.comment{
+	position: relative;
+    height: auto;
+	width: 70%;
+	margin:auto auto 100px auto;
+	padding:auto auto auto auto;
+    text-align:justify;
+}
+.comment .commentForm{
+	position: relative;
+    height: auto;
+	margin:20px auto auto 20px;
+	padding:auto auto auto auto;
+    text-align:justify;
 }
