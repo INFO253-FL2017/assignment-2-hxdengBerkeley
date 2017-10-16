@@ -37,17 +37,18 @@ def blog_page(blog_name):
 
 @app.route('/contact', methods=['POST'])
 def send_message():
-	name = request.form.get("name")
-	subject = request.form.get("subject")
-	text = request.form.get("message")
-	requests.post(
+  name = request.form.get("name")
+  subject = request.form.get("subject")
+  email = request.form.get("email")
+  text = request.form.get("message")
+  requests.post(
         "https://api.mailgun.net/v3/sandboxcfe13ea2b6454677ad3a9eeb67859b3c.mailgun.org/messages",
         auth=("api", "key-581b01dec69ae4c537968ee1e0e5ae58"),
         data={"from": name+" <postmaster@sandboxcfe13ea2b6454677ad3a9eeb67859b3c.mailgun.org>",
               "to": "Hanxiao Deng <hxdeng@berkeley.edu>",
               "subject": subject,
-              "text": text+"   from Hanxiao Deng's Blog"})
-	return render_template("contact.html",name="name")
+              "text": text+"   from  "+email})
+  return render_template("contact.html",name="name")
 # You can see a record of this email in your logs: https://mailgun.com/app/logs .
 
 # You can send up to 300 emails/day from this sandbox server.
